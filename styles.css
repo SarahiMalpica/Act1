@@ -1,0 +1,180 @@
+/* Colores Owala */
+:root {
+    --owala-teal: #7ad7d0;
+    --owala-pink: #ff9fb2;
+    --owala-yellow: #f9e076;
+    --owala-dark: #54565a;
+    --bg-light: #fdfbf7;
+}
+
+/* Selector Universal - Limpia espacios por defecto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--owala-dark);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+/* Header - Delgado y compacto */
+header {
+    background-color: var(--owala-teal);
+    text-align: center;
+    padding: 20px 16px; 
+    color: white;
+}
+
+.logo {
+    width: 280px;      
+    max-width: 85%;    
+    height: auto;      
+    margin-bottom: 10px;
+}
+
+.header-desc {
+    font-size: 20px;   /* Tamaño grande */
+    font-weight: bold; /* Negritas */
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Sección Misión y Visión */
+.card-mision {
+    background: var(--owala-pink);
+    color: white;
+    padding: 32px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* Cuadrícula de Productos */
+.section-title {
+    text-align: center;
+    margin: 32px 0;
+    font-size: 32px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 24px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Contenedor de imagen con efecto zoom */
+.img-container {
+    padding: 32px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; 
+}
+
+.img-container:hover {
+    transform: scale(1.05);
+}
+
+.color-1 { background-color: #e0f2f1; }
+.color-2 { background-color: #fff9c4; }
+.color-3 { background-color: #fce4ec; }
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formulario de Contacto */
+.contact-box {
+    background: white;
+    padding: 32px;
+    border-radius: 20px;
+    border: 3px solid var(--owala-yellow);
+    margin-top: 32px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+.btn-submit {
+    background-color: var(--owala-dark);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Pie de página y Redes Sociales */
+footer {
+    background: var(--owala-dark);
+    color: white;
+    text-align: center;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.socials a {
+    color: var(--owala-pink);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    color: var(--owala-teal);
+    text-decoration: underline;
+}
+
+/* Ajustes para Celulares */
+@media (max-width: 600px) {
+    .container {
+        padding: 16px;
+    }
+    .logo {
+        width: 200px;
+    }
+    .header-desc {
+        font-size: 18px;
+    }
+}
